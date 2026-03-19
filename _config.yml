@@ -1,0 +1,37 @@
+# Site settings
+title: Hemanta Pant Portfolio
+description: A simple site built with GitHub Pages
+url: "https://hemantapant9.github.io"
+baseurl: "" # Leave empty unless using a project repo
+
+# Author info
+author:
+  name: Hemanta Pant
+  email: hemantapant9@gmail.com
+
+# Build settings
+theme: minima   # Default GitHub Pages theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Navigation (optional)
+header_pages:
+  - index.md
+  - about.md
+  - contact.md
+
+# Social links (optional)
+github_username: hempan9
+twitter_username: hempan9
+
+# Exclude files from build
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
