@@ -1,35 +1,71 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     background: #0f172a;
     color: #f1f5f9;
 }
 
-header {
+/* Header */
+.header {
     text-align: center;
     padding: 30px;
     background: #1e293b;
 }
 
-nav a {
+.header h1 {
+    margin: 0;
+}
+
+.links a {
     margin: 10px;
     color: #38bdf8;
     text-decoration: none;
 }
 
-section {
-    padding: 40px;
+/* Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
-.project {
+/* Left & Right */
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+}
+
+/* Cards */
+.card {
     background: #1e293b;
     padding: 20px;
-    margin-top: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+/* Jobs */
+.job {
+    margin-bottom: 20px;
+}
+
+.job span {
+    font-size: 0.9em;
+    color: #94a3b8;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
